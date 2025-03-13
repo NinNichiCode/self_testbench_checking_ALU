@@ -1,0 +1,8 @@
+D:/self_checking_VLSI/ALU_sc_tb.v {1 {vlog -work work -vopt -stats=none D:/self_checking_VLSI/ALU_sc_tb.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+-- Compiling module ALU_sc_tb
+
+Top level modules:
+	ALU_sc_tb
+
+} {} {}}

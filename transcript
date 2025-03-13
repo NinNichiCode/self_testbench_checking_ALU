@@ -1,0 +1,186 @@
+# do vsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 18:22:41 on Feb 21,2025
+# vlog -sv ALU.v ALU_sc_tb.v 
+# -- Compiling module ALU
+# -- Compiling module ALU_sc_tb
+# 
+# Top level modules:
+# 	ALU_sc_tb
+# End time: 18:22:41 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -uvmcontrol=all ALU_sc_tb 
+# Start time: 18:22:41 on Feb 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.ALU_sc_tb(fast)
+#                    1 TEST0 opcode = 1, a = 129, b = 9, carry_in = 1
+#                    1 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10001010
+#                    1         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10001010
+#                    4 TEST1 opcode = 9, a = 141, b = 101, carry_in = 0
+#                    4 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11000110
+#                    4         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11000110
+#                    7 TEST2 opcode = 9, a = 13, b = 118, carry_in = 1
+#                    7 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10000110
+#                    7         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10000110
+#                   10 TEST3 opcode = 4, a = 140, b = 249, carry_in = 0
+#                   10 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=10001101
+#                   10         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=10001101
+#                   13 TEST4 opcode = 8, a = 170, b = 229, carry_in = 1
+#                   13 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01010101
+#                   13         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01010101
+#                   16 TEST5 opcode = 2, a = 143, b = 242, carry_in = 0
+#                   16 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=10000001
+#                   16         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=10000001
+#                   19 TEST6 opcode = 3, a = 197, b = 92, carry_in = 1
+#                   19 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01101001
+#                   19         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01101001
+#                   22 TEST7 opcode = 2, a = 101, b = 99, carry_in = 0
+#                   22 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11001000
+#                   22         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11001000
+#                   25 TEST8 opcode = 5, a = 32, b = 170, carry_in = 1
+#                   25 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00011111
+#                   25         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00011111
+#                   28 TEST9 opcode = 0, a = 19, b = 13, carry_in = 1
+#                   28 SUCCESS 	 EXPECTED invalid_op=1, parity=0, zero=1, borrow=0, carry_out=0, y=00000000
+#                   28         	 OBSERVED invalid_op=1, parity=0, zero=1, borrow=0, carry_out=0, y=00000000
+#                   31 TEST10 opcode = 2, a = 213, b = 2, carry_in = 0
+#                   31 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11010111
+#                   31         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11010111
+#                   34 TEST11 opcode = 2, a = 207, b = 35, carry_in = 0
+#                   34 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11110010
+#                   34         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11110010
+#                   37 TEST12 opcode = 3, a = 60, b = 242, carry_in = 0
+#                   37 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=01001010
+#                   37         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=01001010
+#                   40 TEST13 opcode = 7, a = 216, b = 120, carry_in = 1
+#                   40 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00100111
+#                   40         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00100111
+#                   43 TEST14 opcode = 3, a = 182, b = 198, carry_in = 0
+#                   43 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=1, carry_out=0, y=11110000
+#                   43         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=1, carry_out=0, y=11110000
+#                   46 TEST15 opcode = 3, a = 42, b = 11, carry_in = 1
+#                   46 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00011111
+#                   46         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00011111
+#                   49 TEST16 opcode = 9, a = 79, b = 59, carry_in = 0
+#                   49 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10100111
+#                   49         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10100111
+#                   52 TEST17 opcode = 6, a = 21, b = 241, carry_in = 1
+#                   52 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00010001
+#                   52         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00010001
+#                   55 TEST18 opcode = 8, a = 76, b = 159, carry_in = 1
+#                   55 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10011000
+#                   55         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10011000
+#                   58 TEST19 opcode = 2, a = 183, b = 159, carry_in = 0
+#                   58 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=01010110
+#                   58         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=01010110
+#                   61 TEST20 opcode = 4, a = 137, b = 73, carry_in = 0
+#                   61 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10001010
+#                   61         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10001010
+#                   64 TEST21 opcode = 6, a = 81, b = 150, carry_in = 0
+#                   64 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00010000
+#                   64         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00010000
+#                   67 TEST22 opcode = 1, a = 200, b = 119, carry_in = 1
+#                   67 ERROR 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=00111111
+#                   67       	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00111111
+#                   70 TEST23 opcode = 3, a = 126, b = 109, carry_in = 1
+#                   70 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00010001
+#                   70         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00010001
+#                   73 TEST24 opcode = 5, a = 211, b = 133, carry_in = 0
+#                   73 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11010010
+#                   73         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11010010
+#                   76 TEST25 opcode = 4, a = 73, b = 63, carry_in = 0
+#                   76 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=01001010
+#                   76         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=01001010
+#                   79 TEST26 opcode = 2, a = 134, b = 142, carry_in = 0
+#                   79 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=00010100
+#                   79         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=00010100
+#                   82 TEST27 opcode = 7, a = 38, b = 115, carry_in = 1
+#                   82 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11011001
+#                   82         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11011001
+#                   85 TEST28 opcode = 10, a = 179, b = 95, carry_in = 0
+#                   85 SUCCESS 	 EXPECTED invalid_op=1, parity=0, zero=1, borrow=0, carry_out=0, y=00000000
+#                   85         	 OBSERVED invalid_op=1, parity=0, zero=1, borrow=0, carry_out=0, y=00000000
+#                   88 TEST29 opcode = 3, a = 203, b = 230, carry_in = 0
+#                   88 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=11100101
+#                   88         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=11100101
+#                   91 TEST30 opcode = 9, a = 237, b = 218, carry_in = 1
+#                   91 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11110110
+#                   91         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11110110
+#                   94 TEST31 opcode = 1, a = 223, b = 121, carry_in = 0
+#                   94 ERROR 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=1, y=01011000
+#                   94       	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=01011000
+#                   97 TEST32 opcode = 6, a = 42, b = 171, carry_in = 0
+#                   97 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00101010
+#                   97         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00101010
+#                  100 TEST33 opcode = 3, a = 154, b = 253, carry_in = 1
+#                  100 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=10011101
+#                  100         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=10011101
+#                  103 TEST34 opcode = 5, a = 78, b = 103, carry_in = 0
+#                  103 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01001101
+#                  103         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01001101
+#                  106 TEST35 opcode = 2, a = 56, b = 121, carry_in = 0
+#                  106 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=10110001
+#                  106         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=10110001
+#                  109 TEST36 opcode = 1, a = 147, b = 4, carry_in = 1
+#                  109 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10010111
+#                  109         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10010111
+#                  112 TEST37 opcode = 2, a = 77, b = 217, carry_in = 1
+#                  112 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=00100111
+#                  112         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=00100111
+#                  115 TEST38 opcode = 9, a = 202, b = 182, carry_in = 1
+#                  115 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01100101
+#                  115         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=01100101
+#                  118 TEST39 opcode = 3, a = 4, b = 247, carry_in = 1
+#                  118 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=00001101
+#                  118         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=1, carry_out=0, y=00001101
+#                  121 TEST40 opcode = 2, a = 136, b = 40, carry_in = 1
+#                  121 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=10110001
+#                  121         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=10110001
+#                  124 TEST41 opcode = 6, a = 46, b = 8, carry_in = 0
+#                  124 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00001000
+#                  124         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00001000
+#                  127 TEST42 opcode = 4, a = 41, b = 28, carry_in = 0
+#                  127 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00101010
+#                  127         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=00101010
+#                  130 TEST43 opcode = 3, a = 61, b = 102, carry_in = 0
+#                  130 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=1, carry_out=0, y=11010111
+#                  130         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=1, carry_out=0, y=11010111
+#                  133 TEST44 opcode = 1, a = 186, b = 94, carry_in = 0
+#                  133 ERROR 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=1, y=00011000
+#                  133       	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00011000
+#                  136 TEST45 opcode = 1, a = 26, b = 185, carry_in = 1
+#                  136 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11010011
+#                  136         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=11010011
+#                  139 TEST46 opcode = 7, a = 192, b = 38, carry_in = 0
+#                  139 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00111111
+#                  139         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=00111111
+#                  142 TEST47 opcode = 5, a = 220, b = 134, carry_in = 0
+#                  142 SUCCESS 	 EXPECTED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11011011
+#                  142         	 OBSERVED invalid_op=0, parity=0, zero=0, borrow=0, carry_out=0, y=11011011
+#                  145 TEST48 opcode = 0, a = 219, b = 207, carry_in = 1
+#                  145 SUCCESS 	 EXPECTED invalid_op=1, parity=0, zero=1, borrow=0, carry_out=0, y=00000000
+#                  145         	 OBSERVED invalid_op=1, parity=0, zero=1, borrow=0, carry_out=0, y=00000000
+#                  148 TEST49 opcode = 7, a = 97, b = 23, carry_in = 1
+#                  148 SUCCESS 	 EXPECTED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10011110
+#                  148         	 OBSERVED invalid_op=0, parity=1, zero=0, borrow=0, carry_out=0, y=10011110
+#                  150 TEST RESULTS success_count = 47, error_count = 3, test_count = 50
+# ** Note: $stop    : ALU_sc_tb.v(121)
+#    Time: 190 us  Iteration: 0  Instance: /ALU_sc_tb
+# Break at ALU_sc_tb.v line 121
+# Stopped at ALU_sc_tb.v line 121
